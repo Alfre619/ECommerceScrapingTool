@@ -1,0 +1,61 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches de los editores
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Entornos virtuales
+.venv/
+env/
+venv/
+ENV/
+
+# Archivos de distribución
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+bin/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Archivos de configuración de PyInstaller
+*.manifest
+*.spec
+
+# Archivos de base de datos local
+*.db
+*.sql
+
+# Archivos de configuración local
+*.conf
+*.ini
+*.json
+*.yaml
+*.yml
+
+# Archivos de registro
+*.log
+*.csv
+
+# Archivos de entorno
+.env
+.env.example
+
+# Carpetas de pytest
+.cache/
+.pytest_cache/
+
+# Carpeta de construcción de Sphinx
+docs/_build/

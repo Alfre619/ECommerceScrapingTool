@@ -14,14 +14,17 @@ average_prices = df.groupby('manufacturer')['price'].mean().sort_values()
 print("Precio promedio por fabricante ordenado:")
 print(average_prices)
 
-# Rango de precios
-print("Rango de precios:")
-print(f"Precio mínimo: {df['price'].min()}")
-print(f"Precio máximo: {df['price'].max()}")
-
 # Contar el número de productos por fabricante
 print("Conteo de productos por fabricante:")
 print(df['manufacturer'].value_counts())
+
+# Los 5 productos más caros
+print("Los 5 productos más caros:")
+print(df.nlargest(5, 'price')[['manufacturer', 'title', 'price']])
+
+# Los 5 productos más baratos
+print("Los 5 productos más baratos:")
+print(df.nsmallest(5, 'price')[['manufacturer', 'title', 'price']])
 
 # Histograma de precios
 plt.figure(figsize=(10, 6))
@@ -42,3 +45,6 @@ plt.xlabel('Fabricante')
 plt.ylabel('Precio (£)')
 plt.xticks(rotation=45)
 plt.show()
+
+
+
